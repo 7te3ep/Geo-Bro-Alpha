@@ -1,0 +1,17 @@
+@media (max-width: 1100px) {
+    .possibility {
+        margin: 10px;
+        font-size: 20px;
+    }
+    #btnArea {
+        width: 90vw;
+    }
+    img {
+        width:310px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    #Question {
+        font-size: 25px;
+    }
+}

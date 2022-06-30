@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON LINK-->
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/quizzGames.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <title>Geo-Brow</title>
+</head>
+<body>
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Geo-Brow
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="../../../Home/index.html">Home</a>
+      <a href="../../../JeuxMenu/index.html">Jouer</a>
+      <a href="">About</a>
+      <a id="account" href="">Compte</a>
+    </div>
+  </div>
+
+
+    <section id="mainContent">
+      <p id="quizzAdvancement">0/20</p>
+      <button onclick="setTimeout(gameStart,100)" id="startButton">Play</button>
+      <p id="Question">Quelle est la capital de paris ?</p>
+      <img src="ressources/quizzIllustration.jpg" alt="" id="illustration">
+      <section id="btnArea">
+        <ul>
+          <li><button class="possibility">Maurecourt</button></li>
+          <li><button class="possibility">Maurecourt</button></li>
+          <li><button class="possibility">Maurecourt</button></li>
+          <li><button class="possibility">Maurecourt</button></li>
+        </ul>
+      </section>
+    </section>
+    <script src="quizzGames.js"></script>
+</body>
+</html>

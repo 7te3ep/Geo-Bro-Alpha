@@ -1,0 +1,19 @@
+@media (max-width: 1100px) {
+    .gameGallery {
+        width: 80vw;
+        height: 70px;
+        font-size: 20px;
+        margin: 15px;
+    }
+    .rowList {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    h1{
+        text-align: center;
+        width: 80vw;
+        font-size: 25px;
+    }
+}
