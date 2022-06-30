@@ -10,7 +10,7 @@
 
 .rowList {
     display: flex;
-    width: 50vw;
+    width:780px ;
     align-items: center;
     justify-content: center;
     flex-direction:row;

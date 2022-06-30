@@ -18,6 +18,7 @@
 }
 
 .rowList {
+    width: 780px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

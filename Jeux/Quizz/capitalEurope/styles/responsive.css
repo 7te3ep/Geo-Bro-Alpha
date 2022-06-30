@@ -1,5 +1,6 @@
 @media (max-width: 1100px) {
     .possibility {
+        min-width: 150px;
         margin: 10px;
         font-size: 20px;
     }
