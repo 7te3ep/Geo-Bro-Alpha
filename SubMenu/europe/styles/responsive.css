@@ -30,6 +30,7 @@
         background-position: -250px;
     }
     .rowList {
+        width: fit-content;
         display: flex;
         align-items: center;
         justify-content: space-evenly;

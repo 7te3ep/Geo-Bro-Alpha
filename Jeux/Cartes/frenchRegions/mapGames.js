@@ -1,18 +1,22 @@
 /* DOM ELEMENTS*/
 
-timerDisplay = document.getElementById('timerDisplay')
-questionDisplay = document.getElementById('displayInstruction')
-startButton = document.getElementById('startButton')
+let timerDisplay = document.getElementById('timerDisplay')
+let questionDisplay = document.getElementById('displayInstruction')
+let startButton = document.getElementById('startButton')
+let scoreDisplay = document.getElementById('scoreDisplay')
+let scoreCard = document.getElementById('scoreCard')
+
 
 /* VARIABLES */
 
 var playState = false
-var timerValue = 5
+var timerValue = 50
 var paths = document.querySelector('#allMap').querySelectorAll('.land');
 var question = ["Corse", "Grand Est", "Nouvelle-Aquitaine", "Auvergne-Rhone-Alpes", "Bourgogne-Franche-Comte", "Ile-de-France", "Occitanie", "Hauts-de-France", "Normandie", "Pays de la Loire","Provence-Alpes-Cote d'Azur","Bretagne"];
 var answer = ''
 var indexIncrease = 0
 var score = 0
+var timerScoreValue = 100
 
 /* TOOLS FUNCTION */
 
@@ -32,10 +36,12 @@ function resetAll() {
     hideElement(questionDisplay)
     hideElement(timerDisplay)
     showElement(startButton)
+    showElement(scoreCard)
     shuffleArray(question)
     indexIncrease = 0
-    score = 0
     questionDisplay.textContent = question[indexIncrease];
+    score = 0
+    timerScoreValue = 100
 }
 
 paths.forEach(function (path) {
@@ -57,12 +63,14 @@ resetAll()
 
 // when button clicked
 function gameStart() {
+    hideElement(scoreCard)
     hideElement(startButton)
     showElement(timerDisplay)
     showElement(questionDisplay)
     playState = true
-    timerValue = 5
+    timerValue = 50
     timer()
+    timerScore()
 }
 
 // timer
@@ -82,29 +90,44 @@ function timer() {
     }
 }
 
+function timerScore() {
+    if (playState == true) {
+        // fait baisser la valeur du timer toutes les secondes
+        if (timerScoreValue > 10) {
+            timerScoreValue = timerScoreValue - 10
+            console.log(timerScoreValue)
+            console.log(score)
+        // si la valeur est negative apparition bouton restart + fin du jeu
+        }
+        setTimeout(timerScore,1000)
+    }
+}
+
 function winChecking(questions,anwser) {
     if (indexIncrease==question.length-1) {
         gameFinished() // c'est la bonne reponse et il n'y a plus de question la partie est terminer
     }
     else {
-    if (questions == anwser) {
+        if (questions == anwser) {
             animColor('goodAnwser');
-            score ++
             indexIncrease ++
             questionDisplay.textContent = question[indexIncrease];
+            score = score + timerScoreValue 
+            timerScoreValue = 100
         }
-    else {
-        animColor('badAnwser');
-        indexIncrease ++
-        questionDisplay.textContent = question[indexIncrease];
+        else {
+            animColor('badAnwser');
+            indexIncrease ++
+            questionDisplay.textContent = question[indexIncrease];
+            timerScoreValue = 100
+        }
     }
 }
-}
-
 
 // game finished
 
 function gameFinished() {
+    scoreDisplay.textContent = score
     resetAll()
 }
 

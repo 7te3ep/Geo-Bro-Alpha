@@ -109,15 +109,45 @@ ul {
     margin: 25px;
 }
 
-.possibility:hover {
-    scale: 1.1;
-    background-image:linear-gradient(100deg,#cfe6ff,#d4b8ff) ;
-    background-size: 120%;
-    border: 1px #999 solid ;
-    box-shadow: 5px 5px 5px #555;
-}
 
 .possibility:active {
     box-shadow: none;
     translate: 5px 5px;
+}
+
+#scoreCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 23px;
+    position: absolute;
+    height: fit-content;
+    padding: 30px;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border:#007BFF 5px solid;
+    border-radius: 20px;
+    margin-bottom: 300px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#scoreCard > p  {
+    margin-top: 20px;
+    background-image:linear-gradient(100deg,#cfe6ff,#d4b8ff) ;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bolder;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#scoreCard > p::after {
+        content: 'pt';
 }
