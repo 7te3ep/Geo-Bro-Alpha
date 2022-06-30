@@ -135,6 +135,15 @@ svg {
     -moz-transform: translateY(60px);
     -ms-transform: translateY(60px);
     -o-transform: translateY(60px);
+    zoom: 0.4; /* IE */
+    -moz-transform: scale(0.4); /* Firefox */
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.4); /* Opera */
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.4); /* Safari And Chrome */
+    -webkit-transform-origin: 0 0;
+    transform: scale(0.4); /* Standard Property */
+    transform-origin: 0 0;  /* Standard Property */
 }
 
 #Corse {
