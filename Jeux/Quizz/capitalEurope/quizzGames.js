@@ -85,6 +85,7 @@ function checkQuestion(questionText) {
         case "l'Allemagne": { setupAnswer("Francfort", "Munich", "Hambourg", "Berlin", "Berlin"); break}
         case "l'Italie": { setupAnswer("Rome", "Naples", "Venise", "Florence", "Rome"); break}
         case "le Portugal": {setupAnswer("Porto", "Braga", "Lisbonne", "Madrid", "Lisbonne"); break}
+        case "undefined" : {questionDisplay.textContent = "",resetAll()}
         default: resetAll()
     }
 }
