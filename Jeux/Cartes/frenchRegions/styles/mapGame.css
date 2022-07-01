@@ -134,11 +134,16 @@ svg {
     -moz-transform: translateY(60px);
     -ms-transform: translateY(60px);
     -o-transform: translateY(60px);
-    zoom: 0.4; /* IE */
-    -moz-transform: scale(0.4); /* Firefox */
-    -o-transform: scale(0.4); /* Opera */
-    -webkit-transform: scale(0.4); /* Safari And Chrome */
-    transform: scale(0.4); /* Standard Property */
+}
+
+@media (min-width: 1100px) {
+    svg {
+        zoom: 0.4; /* IE */
+        -moz-transform: scale(0.4); /* Firefox */
+        -o-transform: scale(0.4); /* Opera */
+        -webkit-transform: scale(0.4); /* Safari And Chrome */
+        transform: scale(0.4); /* Standard Property */
+    }
 }
 
 #Corse {
