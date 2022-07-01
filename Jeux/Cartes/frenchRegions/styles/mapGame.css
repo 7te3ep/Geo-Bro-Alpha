@@ -122,6 +122,7 @@
 }
 
 svg {
+
     z-index: 3;
     position: relative;
     transform: translateY(60px);
@@ -136,7 +137,7 @@ svg {
     -o-transform: translateY(60px);
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1290px) {
     svg {
         zoom: 0.4; /* IE */
         -moz-transform: scale(0.4); /* Firefox */

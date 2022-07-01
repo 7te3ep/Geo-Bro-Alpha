@@ -1,4 +1,10 @@
-@media (max-width: 1100px) {
+@media (min-width: 540px) and (max-width: 1290px) {
+    svg {
+        max-height: 90vh;
+}
+}
+
+@media (max-width: 1290px) {
     svg {
         zoom: 1;
         /*IE*/-moz-transform: scale(1);

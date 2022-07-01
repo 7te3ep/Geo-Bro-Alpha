@@ -22,7 +22,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1290px) {
     .rowList {    width: 780px;}
 }
 
