@@ -94,13 +94,14 @@
 }
 
 .userInteract > p {
+    padding: 10px 0px;
     width: 100%;
     font-size: 17px;
     overflow-wrap: break-word;
 }
 
 .userInteract > h2 {
-    font-size:clamp(30px,4vw,30px);
+    font-size:clamp(20px,2vw,20px);
     width: 100%;
     overflow-wrap: break-word;
 }

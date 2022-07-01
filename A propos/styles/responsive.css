@@ -10,6 +10,12 @@
     #main2 {
         flex-basis: 45%;
     }
+    .userInteract > h2{
+        font-size: 30px;
+    }
+    .userInteract > p{
+        font-size: 20px;
+    }
     #main3 {
         flex-basis: 45%;
     }
