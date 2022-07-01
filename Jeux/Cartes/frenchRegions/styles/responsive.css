@@ -1,11 +1,15 @@
 @media (max-width: 1100px) {
     svg {
-        zoom: 1.9; /* IE */
-        -moz-transform: scale(1.9); /* Firefox */
-        -o-transform: scale(1.9); /* Opera */
-        -webkit-transform: scale(1.9); /* Safari And Chrome */
-        transform: scale(1.9); /* Standard Property */
-    }
+        zoom: 1;
+        /*IE*/-moz-transform: scale(1);
+        /*Firefox*/-o-transform: scale(1);
+        /*Opera*/-webkit-transform: scale(1);
+        /*SafariAndChrome*/transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
     #timerDisplay {
         font-weight: bolder;
         font-size: 23px;
