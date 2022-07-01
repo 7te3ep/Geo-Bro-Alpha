@@ -129,6 +129,7 @@ function winChecking(questions,anwser) {
 function gameFinished() {
     scoreDisplay.textContent = score
     resetAll()
+    questionDisplay.textContent = "";
 }
 
 function animColor(goodOrBad) {
