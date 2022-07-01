@@ -18,13 +18,13 @@
     .gameGallery {
         width: 60vw;
         height: fit-content;
-        font-size: 20px;
+        font-size: 15px;
         margin: 20px;
     }
     .gameProfile {
         margin: 5px 0px;
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
     }
     h1{
         background-position: -250px;

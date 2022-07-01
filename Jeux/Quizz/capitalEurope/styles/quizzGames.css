@@ -149,5 +149,5 @@ ul {
 }
 
 #scoreCard > p::after {
-        content: 'pt';
+        content: '/20';
 }

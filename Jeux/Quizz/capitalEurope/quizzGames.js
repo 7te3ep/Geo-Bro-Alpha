@@ -8,6 +8,8 @@ let button3 = document.getElementById("btn3")
 let button4 = document.getElementById("btn4")
 let buttonArea = document.getElementById("btnArea")
 let scoreElement = document.getElementById("quizzAdvancement")
+let scoreDisplay = document.getElementById('scoreDisplay')
+let scoreCard = document.getElementById('scoreCard')
 
 // VARIABLES
 var gameState = ""
@@ -39,9 +41,11 @@ function shuffle() {
 }
 
 function resetAll() {
+    scoreDisplay.textContent = score
     gameState = false
     shuffle()
     showElement(startButton)
+    showElement(scoreCard)
     hideElement(questionDisplay)
     hideElement(buttonArea)
     hideElement(scoreElement)
@@ -60,6 +64,7 @@ resetAll()
 function gameStart() {
     gameState = true
     hideElement(startButton)
+    hideElement(scoreCard)
     showElement(questionDisplay)
     showElement(buttonArea)
     showElement(illustration)
