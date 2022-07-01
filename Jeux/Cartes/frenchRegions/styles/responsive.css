@@ -1,10 +1,10 @@
 @media (max-width: 1100px) {
     svg {
-        zoom: 2.3; /* IE */
-        -moz-transform: scale(2.3); /* Firefox */
-        -o-transform: scale(2.3); /* Opera */
-        -webkit-transform: scale(2.3); /* Safari And Chrome */
-        transform: scale(2.3); /* Standard Property */
+        zoom: 1.9; /* IE */
+        -moz-transform: scale(1.9); /* Firefox */
+        -o-transform: scale(1.9); /* Opera */
+        -webkit-transform: scale(1.9); /* Safari And Chrome */
+        transform: scale(1.9); /* Standard Property */
     }
     #timerDisplay {
         font-weight: bolder;
@@ -16,7 +16,7 @@
     }
     #displayInstruction {
         padding: 15px;
-        width: fit-content;
+        width: 50vw;
         height: 50px;
         margin: 0px;
         left: 10px;
