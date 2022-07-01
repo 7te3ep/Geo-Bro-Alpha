@@ -63,7 +63,6 @@ resetAll()
 
 // when button clicked
 function gameStart() {
-    resetAll()
     hideElement(scoreCard)
     hideElement(startButton)
     showElement(timerDisplay)
@@ -130,7 +129,6 @@ function winChecking(questions,anwser) {
 function gameFinished() {
     scoreDisplay.textContent = score
     resetAll()
-    questionDisplay.textContent = "";
 }
 
 function animColor(goodOrBad) {
