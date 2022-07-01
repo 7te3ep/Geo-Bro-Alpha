@@ -63,6 +63,7 @@ resetAll()
 
 // when button clicked
 function gameStart() {
+    resetAll()
     hideElement(scoreCard)
     hideElement(startButton)
     showElement(timerDisplay)
