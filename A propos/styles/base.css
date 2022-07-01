@@ -13,9 +13,11 @@
 }
 
 body {
+    min-height: 100vh;
     height: 100vh;
+    overflow-y: scroll;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     background-image: linear-gradient(80deg,#D3D0CB,#D3D0CB,#aca9a5);
     background-color:#D3D0CB;
 }
