@@ -1,0 +1,16 @@
+@media (min-width: 1100px) {
+    #main1 {
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.5) 70%,rgba(0, 0, 0, 0.3) 100%),url(../ressources/headerImg.webp);
+        padding: 30px  50px;
+        flex-basis: 30%;
+    }
+    #headerTitle {
+        font-size: 135px;
+    }
+    #main2 {
+        flex-basis: 45%;
+    }
+    #main3 {
+        flex-basis: 45%;
+    }
+}

@@ -1,0 +1,112 @@
+
+
+.nav {
+  padding-right: 10px;
+  z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 25px;
+    color: #333;
+    padding: 11px 30px;
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 20px;
+  }
+
+  .nav > .nav-links > a {
+    font-weight:500;
+    display: inline-block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #111;
+  }
+
+  .nav > .nav-links > a:hover {
+    background-color: #007bff2d;
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 3px solid #333;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: white;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  #account {
+    color: white;
+    font-weight: bolder;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-image: linear-gradient(100deg,#007BFF,#6600FF);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#account:active {
+  background-image: linear-gradient(100deg,#75b5f8,#a26af5);
+  scale: 0.9;
+}
