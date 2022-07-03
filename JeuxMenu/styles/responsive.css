@@ -1,9 +1,9 @@
 @media (max-width: 1290px) {
     .gameGallery {
-        width: 80vw;
-        height: 60px;
-        font-size: 18px;
-        margin: 13px;
+        width: 60vw;
+        height: 50px;
+        font-size: 15px;
+        margin: 10px;
     }
     .rowList {
         display: flex;
@@ -15,6 +15,6 @@
     h1{
         text-align: center;
         width: 80vw;
-        font-size: 20px;
+        font-size: 17px;
     }
 }
