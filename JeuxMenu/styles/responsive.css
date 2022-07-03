@@ -1,4 +1,8 @@
 @media (max-width: 1290px) {
+    #mainContent {
+        height: 100vh;
+        max-height: -webkit-fill-available;
+    }
     .gameGallery {
         width: 60vw;
         height:fit-content;
