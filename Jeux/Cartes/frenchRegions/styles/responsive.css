@@ -27,7 +27,8 @@
     #displayInstruction {
         padding: 0px 15px;
         width: fit-content;
-        height: 50px;
+        word-wrap: break-word;
+        height: fit-content;
         margin: 0px;
         left: 10px;
         font-size: 20px;
