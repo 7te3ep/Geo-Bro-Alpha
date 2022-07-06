@@ -1,0 +1,38 @@
+@media (min-width: 540px) and (max-width: 1290px) {
+    svg {
+
+}
+}
+
+@media (max-width: 1290px) {
+    svg {
+        zoom: 0.85;
+        /*IE*/-moz-transform: scale(0.85);
+        /*Firefox*/-o-transform: scale(0.85);
+        /*Opera*/-webkit-transform: scale(0.85);
+        /*SafariAndChrome*/transform: scale(0.85);
+        transform: translate(20px,0px);
+        -webkit-transform: translate(20px,0px);
+        -moz-transform: translate(20px,0px);
+        -ms-transform: translate(20px,0px);
+        -o-transform: translate(20px,0px);
+}
+    #timerDisplay {
+        font-weight: bolder;
+        font-size: 23px;
+        height: 50px;
+        margin: 0px;
+        right: 10px;
+        width: 20vw;
+    }
+    #displayInstruction {
+        padding: 0px 15px;
+        width: fit-content;
+        word-wrap: break-word;
+        height: fit-content;
+        margin: 0px;
+        left: 10px;
+        font-size: 20px;
+        min-width: fit-content;
+    }
+}
