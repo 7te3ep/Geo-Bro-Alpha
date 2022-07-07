@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON LINK-->
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/aPropos.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Geo Bro</title>
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title" onclick="window.location.replace('../Home/index.html')">
+            Geo Bro
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="../Home/index.html">Home</a>
+          <a href="../JeuxMenu/index.html">Jouer</a>
+          <a href="../A propos/index.html">A propos</a>
+          <a id="account" href="">Compte</a>
+        </div>
+      </div>
+
+
+    <section id="mainContent">
+
+      <section id="main1" class="mainRowSection">
+        <p id="headerTitle">La Geographie Fun<br>et Ludique</p>
+      </section>
+
+      <section id="main2" class="mainRowSection">
+        <div id="globeImg"></div>
+        <div id="presentationSection">
+          <h1>Moderne, Cross Plateform et Ergonomique</h1>
+          <p>Geo Bro dispose d'une interface agréable, il est adapté au mobile et au ordinateurs en conservant toute son ergonomie !</p>
+        </div>
+      </section>
+
+      <section id="main3" class="mainRowSection">
+          <div id="liens" class="userInteract">
+              <h2>Nous Rejoindre</h2>
+              <p>N'hesite pas a rejoindre le discord pour discuter, ou reporter des bugs, on est aussi ouverts a toutes les idées d'ameliorations</p>
+              <button class="linksButton">Discord</button>
+          </div>
+          <div id="donate" class="userInteract">
+              <h2>Nous Soutenir</h2>
+              <p>Tu peut nous aider a l'aide d'un don !<br>Faute de moyens on boit de la monster en codant, permet nous d'acheter du redbull, c'est bien meilleur !</p>
+              <button class="linksButton">Donner</button>
+          </div>
+      </section>
+
+    </section>
+    <script src="homePage.js"></script>
+</body>
+</html>

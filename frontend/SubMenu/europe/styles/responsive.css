@@ -1,0 +1,38 @@
+@media (max-width: 1290px) {
+    body {
+        height: fit-content;
+        overflow: scroll;
+    }
+    #mainContent {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    #leftArea {
+        height: fit-content;
+        width: 100vw;
+    }
+    #rightArea {
+        height: fit-content;
+        width: 100vw;
+    }
+    .gameGallery {
+        width: 60vw;
+        height: fit-content;
+        font-size: 15px;
+        margin: 20px;
+    }
+    .gameProfile {
+        margin: 5px 0px;
+        height: 50px;
+        width: 50px;
+    }
+    h1{
+        background-position: -250px;
+    }
+    .rowList {
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

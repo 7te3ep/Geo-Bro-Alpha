@@ -1,0 +1,28 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    color: #222;
+}
+
+body {
+    min-height: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: linear-gradient(80deg,#D3D0CB,#D3D0CB,#aca9a5);
+    background-color:#D3D0CB;
+    background-size: cover;
+}
+
+p {
+    font-size: 20px;
+}

@@ -1,0 +1,51 @@
+@media (max-width: 1290px) {
+    img {
+        width: 30vw;
+    }
+    #mainContent {
+        padding-top: 50px;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+
+    }
+    p {
+        width: 90vw;
+        font-size: 18px;
+    }
+    #leftArea {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        scale: 0.7;
+        height: fit-content;
+    }
+    #rightArea  {
+        height: fit-content;
+        padding: 0px 30px 10px 30px;
+        width: 100vw;
+    }
+    h1 {
+        font-size: 32px;
+        width: 80vw;
+        padding-bottom: 20px;
+    }
+    button {
+        width: 180px;
+    }
+    #content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #account {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+}
+}

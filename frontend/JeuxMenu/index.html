@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/jeuxMenu.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <title>Geo Bro</title>
+</head>
+<body>
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title" onclick="window.location.replace('../Home/index.html')">
+        Geo Bro
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="../Home/index.html">Home</a>
+      <a href="../JeuxMenu/index.html">Jouer</a>
+      <a href="../A propos/index.html">A propos</a>
+      <a id="account" href="">Compte</a>
+    </div>
+  </div>
+
+    <section id="mainContent">
+          <h1>Dans quelle region voulez vous jouer ?</h1>
+          <ul class="rowList">
+            <li onclick="location.href='../SubMenu/europe/index.html'" class="gameGallery" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%),url(ressources/europe.png);background-size:cover;">Europe</li>
+            <li onclick="window.location.replace('../SubMenu/asie/index.html')" class="gameGallery" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%),url(ressources/asie.png);background-size:cover;">Asie</li>
+            <li onclick="window.location.replace('../SubMenu/ameriqueN/index.html')" class="gameGallery" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%),url(ressources/ameriquedunord.png);background-size:cover;">Amerique du nord</li>
+            <li onclick="window.location.replace('../SubMenu/ameriqueS/index.html')" class="gameGallery" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%),url(ressources/ameriquedusud.png);background-size:cover;">Amerique du sud</li>
+            <li onclick="window.location.replace('../SubMenu/oceanie/index.html')" class="gameGallery" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%),url(ressources/oceanie.png);background-size:cover;">Oceanie</li>
+            <li onclick="window.location.replace('../SubMenu/afrique/index.html')" class="gameGallery" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%,rgba(255, 255, 255, 0.6) 100%),url(ressources/afrique.png);background-size:cover;">Afrique</li>
+        </div>
+    </section>
+
+    <script src="homePage.js"></script>
+</body>
+</html>
