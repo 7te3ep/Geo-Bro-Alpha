@@ -31,15 +31,19 @@ function showElement(element) {
     setTimeout(function(){element.style.opacity = '100%'},500)
 }
 
-function resetAll() {
+function resetAll(showQuestion) {
     playState = false
     hideElement(questionDisplay)
     hideElement(timerDisplay)
     showElement(startButton)
     showElement(scoreCard)
-    shuffleArray(question)
     indexIncrease = 0
-    questionDisplay.textContent = question[indexIncrease];
+    if (showQuestion == true) {
+        questionDisplay.textContent = question[indexIncrease];
+    }
+    else {
+        questionDisplay.textContent = '';
+    }
     score = 0
     timerScoreValue = 100
 }
@@ -48,7 +52,8 @@ paths.forEach(function (path) {
     path.addEventListener('click', function(e){
         answer = this.id;
         if (playState == true) {
-        console.log(answer, question[indexIncrease])
+        console.log(question[indexIncrease])
+        console.log(indexIncrease)
         winChecking(answer,question[indexIncrease]);} // verifie si l'id de la reponse correspond a la question
     })
 })
@@ -59,10 +64,12 @@ function shuffleArray(question){
 
 /* MAIN */
 
-resetAll()
+resetAll(true)
 
 // when button clicked
 function gameStart() {
+    shuffleArray(question)
+    questionDisplay.textContent = question[indexIncrease];
     hideElement(scoreCard)
     hideElement(startButton)
     showElement(timerDisplay)
@@ -95,8 +102,6 @@ function timerScore() {
         // fait baisser la valeur du timer toutes les secondes
         if (timerScoreValue > 10) {
             timerScoreValue = timerScoreValue - 10
-            console.log(timerScoreValue)
-            console.log(score)
         // si la valeur est negative apparition bouton restart + fin du jeu
         }
         setTimeout(timerScore,1000)
@@ -112,7 +117,7 @@ function winChecking(questions,anwser) {
             animColor('goodAnwser');
             indexIncrease ++
             questionDisplay.textContent = question[indexIncrease];
-            score = score + timerScoreValue 
+            score = score + timerScoreValue
             timerScoreValue = 100
         }
         else {
@@ -128,7 +133,7 @@ function winChecking(questions,anwser) {
 
 function gameFinished() {
     scoreDisplay.textContent = score
-    resetAll()
+    resetAll(false)
 }
 
 function animColor(goodOrBad) {

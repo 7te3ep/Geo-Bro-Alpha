@@ -7,6 +7,7 @@
     flex-direction: row;
     height: 100%;
     width: 100vw;
+    overflow:hidden;
 }
 
 #displayInstruction {
@@ -126,6 +127,7 @@
 }
 
 svg {
+    left: -50px;
     z-index: 3;
     position: relative;
     transition: opacity 0.4, fill 0.4s;
@@ -133,6 +135,14 @@ svg {
     -moz-transition: opacity 0.4, fill 0.4s;
     -ms-transition: opacity 0.4, fill 0.4s;
     -o-transition: opacity 0.4, fill 0.4s;
+}
+
+#svgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 @media (min-width: 1290px) {
